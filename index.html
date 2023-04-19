@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div id="left">
+      <div class="left-top">
+        <img src="img/Logo alura.png" alt="Alura">
+    <div class="input">
+    <input type="text" id="inputPalavra" placeholder="Digite seu texto"  >
+    </div>
+      </div>
+      <div class="left-down">
+      <div class="alert">
+          <img src="img/icone alert.png" id="icone" alt="simbulo alerta">
+          <p>Apenas letras minúsculas e sem acento</p>
+        </div>
+     
+        
+        <button id="botaoCriptografar"onclick="criptografar()">Criptografar</button>
+        
+        <button id="botaoDescriptografar"onclick="descriptografar()">Descriptografar</button>
+        
+  
+      </div>
+    
+    
+    </div>
+      
+      
+       <div class="right">
+        <img src="img/img.jpg" id="menino" alt="img">
+        <h1 id="rightmsg1">Nenhuma mensagem encontrada</h1>
+        <p id="rightmsg">Digite um texto que você gostaria de criptografar ou decriptografar.</p>
+        <textarea id="resultado"  value={decryptText}></textarea>
+        <button id="copiar" onclick="copiar()">Copiar</button>
+      </div>
+        
+      
+  </body>
+</html>
